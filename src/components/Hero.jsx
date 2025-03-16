@@ -10,7 +10,7 @@ const Hero = () => {
     <section className="relative w-full h-screen mx-auto">
       {/* Floating Background Image */}
       <motion.img
-        src="/photo2.jpg"
+        src="photo2.jpg"
         alt="Background"
         className="absolute inset-0 w-full h-full object-cover opacity-50"
         initial={{ y: -20, opacity: 0.8 }}
