@@ -7,6 +7,7 @@ import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
 import linkedIn from "./linkedIn.png";
+import leetcode from "./leetcode.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 import demo from "./demo.png";
@@ -21,24 +22,13 @@ import java from "./tech/java.png";
 import mysql from "./tech/mysql.png";
 import reactjs from "./tech/reactjs.png";
 import nextJs from "./tech/nextjs.svg";
+import nextJsSmall from "./tech/nextjsSmall.png";
 import angular from "./tech/angular.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
-import crmnext from "./company/crmnext.png";
-import xcaliber from "./company/xcaliberinfotech.png";
-import nickelfox from "./company/nickelfox.png";
-import newgen from "./company/newgen.png";
-import skillrisers from "./company/skillrisers.png";
-import proximus from "./company/proximus.png";
-
-import aptihealthWeb from "./projects/aptihealthWeb.png";
-import aptihealthApp from "./projects/aptihealthApp.png";
-import zealWeb from "./projects/zealWeb.png";
-import zealApp from "./projects/zealApp.png";
-import rollWeb from "./projects/rollWeb.png";
-import rollApp from "./projects/rollApp.png";
-
+import xcaliber from './company/xcaliberinfotech.png';
+import comingSoon from "./projects/comingSoon.jpg";
 import blogTheme from "./oldProjects/blogTheme.png";
 import companyTheme from "./oldProjects/companyTheme.png";
 import cryptoTracker from "./oldProjects/cryptoTracker.png";
@@ -58,6 +48,7 @@ export {
   web,
   github,
   linkedIn,
+  leetcode,
   demo,
   menu,
   close,
@@ -71,22 +62,13 @@ export {
   mysql,
   reactjs,
   nextJs,
+  nextJsSmall,
   angular,
   redux,
   tailwind,
   typescript,
-  crmnext,
   xcaliber,
-  nickelfox,
-  newgen,
-  skillrisers,
-  proximus,
-  aptihealthWeb,
-  aptihealthApp,
-  zealWeb,
-  zealApp,
-  rollWeb,
-  rollApp,
+  comingSoon,
   blogTheme,
   companyTheme,
   cryptoTracker,

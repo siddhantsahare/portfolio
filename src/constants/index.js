@@ -17,28 +17,19 @@ import {
   java,
   mysql,
   git,
-  crmnext,
-  nickelfox,
-  newgen,
-  skillrisers,
-  proximus,
-  aptihealthWeb,
-  aptihealthApp,
-  zealWeb,
-  zealApp,
-  rollWeb,
-  rollApp,
   linkedIn,
   github,
+  leetcode,
   blogTheme,
   companyTheme, 
-  cryptoTracker,
   statsDashboard,
   lyrics,
   imageSearchApp,
   fellacarz,
   textToSpeech,
-  xcaliber
+  xcaliber,
+  comingSoon,
+  nextJsSmall
 } from "../assets";
 
 const navigationPaths = {
@@ -105,7 +96,7 @@ const technologies = [
   },
   {
     name: "Next JS",
-    icon: nextJs,
+    icon: nextJsSmall,
   },
   {
     name: "Redux Toolkit",
@@ -182,8 +173,8 @@ const projects = [
         color: "orange-text-gradient",
       },
     ],
-    image: aptihealthApp,
-    hosted_link: "https://apps.apple.com/us/app/aptihealth/id1477170874",
+    image: comingSoon,
+    hosted_link: "",
   },
   {
     name: "GridFlow",
@@ -207,8 +198,8 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: aptihealthWeb,
-    hosted_link: "https://www.aptihealth.com/",
+    image: comingSoon,
+    hosted_link: "",
   },
   {
     name: "FellaCarz",
@@ -328,7 +319,7 @@ const heroTitles = [
 
 const publicUrls = {
   resume:
-    "https://drive.google.com/file/d/1fyrk4J_Eh5uBc7mJ9z47yVyfZtjlQLZQ/view?usp=drive_link",
+    "https://drive.google.com/file/d/1VPwM-wb9UVEBMkU_57bm9aqz4uMoMS7d/view?usp=sharing",
   socialProfiles: {
     linkedin: {
       title: "linkedin",
@@ -339,6 +330,11 @@ const publicUrls = {
       title: "github",
       link: "https://github.com/siddhantsahare",
       icon: github,
+    },  
+    leetcode: {
+      title: "leetcode",
+      link: "https://leetcode.com/u/siddhants8019/",
+      icon: leetcode,
     },  
   },
 };
