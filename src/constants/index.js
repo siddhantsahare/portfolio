@@ -258,7 +258,7 @@ const oldProjects = [
       { name: "HTML CSS", color: "orange-text-gradient" },
     ],
     image: statsDashboard,
-    hosted_link: "https://determined-feynman-3d54c0.netlify.app/",
+    hosted_link: "https://trusting-kilby-a30aac.netlify.app/",
   },
   {
     name: "Text To Speech",

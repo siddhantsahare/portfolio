@@ -1,9 +1,9 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import SectionWrapper from "../hoc/SectionWrapper";
 import { motion } from "framer-motion";
 import { slideIn } from "../utils/motion";
 import { styles } from "../styles";
-import { EarthCanvas } from "./canvas";
+import { EarthCanvas } from "./canvas"; // 3D Earth
 import emailjs from "@emailjs/browser";
 import { personalInfo, publicUrls } from "../constants";
 import Modal from "./Modal";
@@ -15,6 +15,7 @@ const Contact = () => {
     email: "",
     message: "",
   });
+
   const [loading, setLoading] = useState(false);
   const [isError, setIsError] = useState(false);
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -23,6 +24,18 @@ const Contact = () => {
     message: "",
     buttonText: "",
   });
+
+  // Detect mobile screen size
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -51,7 +64,7 @@ const Contact = () => {
         () => {
           setModalContent({
             title: "Success!",
-            message: "Thank you. I will get back to you as soon as possilbe.",
+            message: "Thank you. I will get back to you as soon as possible.",
             buttonText: "Ok",
           });
           setIsModalVisible(true);
@@ -155,13 +168,16 @@ const Contact = () => {
           </form>
         </motion.div>
 
+        {/* Show 3D Earth on Desktop, Image on Mobile */}
+        {!isMobile &&
         <motion.div
           variants={slideIn("right", "tween", 0.2, 1)}
-          className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
+          className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px] flex items-center justify-center"
         >
           <EarthCanvas />
-        </motion.div>
+        </motion.div>}
       </div>
+
       {isModalVisible && (
         <Modal
           title={modalContent.title}
