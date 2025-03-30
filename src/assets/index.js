@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import selfImage from "./selfImage.jpg";
 import selfImageCropped from "./selfImageCropped.png";
+import workloop from "./workloop.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -42,6 +43,7 @@ export {
   logo,
   selfImage,
   selfImageCropped,
+  workloop,
   backend,
   creator,
   mobile,

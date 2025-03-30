@@ -29,6 +29,7 @@ import {
   textToSpeech,
   xcaliber,
   comingSoon,
+  workloop,
   nextJsSmall
 } from "../assets";
 
@@ -154,7 +155,7 @@ const projects = [
   {
     name: "WorkLoop",
     description:
-      "A real-time chat application with 1:1 and group messaging, online/offline status tracking, instant message delivery, typing indicators, optimized file uploads, media rendering, and customizable themes.",
+      "A real-time workflow management SPA with 1:1 and group messaging, online/offline status tracking, instant message delivery, typing indicators, optimized file uploads, media rendering, and customizable themes.",
     tags: [
       {
         name: "react",
@@ -173,8 +174,8 @@ const projects = [
         color: "orange-text-gradient",
       },
     ],
-    image: comingSoon,
-    hosted_link: "",
+    image: workloop,
+    hosted_link: "https://slacky-b869a.web.app/",
   },
   {
     name: "GridFlow",
@@ -319,7 +320,7 @@ const heroTitles = [
 
 const publicUrls = {
   resume:
-    "https://drive.google.com/file/d/1VPwM-wb9UVEBMkU_57bm9aqz4uMoMS7d/view?usp=sharing",
+    "https://drive.google.com/file/d/1jpMHKjNtmPa5bNSn-o1VDkBcu61L9CDb/view?usp=sharing",
   socialProfiles: {
     linkedin: {
       title: "linkedin",
